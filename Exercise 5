@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    int bigbox,smallbox,candybars,totalcandybars;
+    printf("Enter amount of big boxes: ");
+    scanf("%d",&bigbox);
+    printf("Enter amount of small boxes in big boxes: ");
+    scanf("%d",&smallbox);
+    printf("Enter amount of candy bars in small boxes: ");
+    scanf("%d",&candybars);
+
+totalcandybars=bigbox*candybars*smallbox;
+
+printf("Amount of candy bars in the big box: %d",totalcandybars);
+
+    }
+
+    
