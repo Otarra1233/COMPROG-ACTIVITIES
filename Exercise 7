@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+    int time,hour,minute,walktime,preptime,temp1,totaltime,totalhour,totalmin;
+
+    printf("Enter time Juan has to arrive: ");
+    scanf("%d:%d",&hour,&minute); 
+    
+    printf("Enter minutes of Juan's walk: ");
+    scanf("%d",&walktime); 
+    
+    printf("Enter minutes of Juan's preparation: ");
+    scanf("%d",&preptime);
+
+    time=walktime+preptime;
+    temp1= (hour*60) + minute; 
+    totaltime=temp1-time;
+    totalhour=totaltime/60;
+    totalmin=totaltime%60;
+
+    printf("\nJuan should go to the job at %d:%d am",totalhour,totalmin);
+        
+    
+}
